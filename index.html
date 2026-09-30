@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pusat informasi kegiatan, organisasi, prestasi, layanan mahasiswa, serta aktivitas Al-Islam dan Kemuhammadiyahan untuk mendukung perjalanan mahasiswa di dalam dan di luar kampus.">
+    <title>Biro Kemahasiswaan & AIK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="ri-book-open-line"></i>
+                <span>Kemahasiswaan & AIK</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#beranda" class="active">Beranda</a>
+                <a href="#kegiatan">Kemahasiswaan</a>
+                <a href="#organisasi">Organisasi & UKM</a>
+                <a href="#prestasi">Prestasi</a>
+                <a href="#aik">AIK</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#agenda">Agenda</a>
+            </nav>
+
+            <div class="nav-actions" style="display: flex; align-items: center; gap: 1rem;">
+                <a href="#kegiatan" class="btn btn-primary nav-cta">Lihat Kegiatan</a>
+
+                <button class="theme-toggle" aria-label="Toggle dark mode"
+                    style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--charcoal);">
+                    <i class="ri-moon-line"></i>
+                </button>
+
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="hero-bg-elements">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content fade-up">
+                <div class="badge-hero">Mulai Perjalananmu</div>
+                <h1 class="hero-title">Temukan Ruangmu, <span class="highlight">Tumbuh Jadi Lebih Hebat.</span></h1>
+                <p class="hero-subtitle">Pusat informasi kegiatan, organisasi, prestasi, layanan mahasiswa, serta
+                    aktivitas Al-Islam dan Kemuhammadiyahan untuk mendukung perjalanan mahasiswa di dalam dan di luar
+                    kampus.</p>
+                <div class="hero-actions">
+                    <a href="#kegiatan" class="btn btn-primary btn-lg">Jelajahi Kegiatan <i
+                            class="ri-arrow-right-line"></i></a>
+                    <a href="#layanan" class="btn btn-outline btn-lg">Lihat Layanan</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-left">
+                <div class="visual-wrapper">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop"
+                        alt="Mahasiswa berdiskusi di kampus" class="hero-img">
+                    <div class="floating-card float-1">
+                        <div class="icon-box"><i class="ri-medal-fill"></i></div>
+                        <div>
+                            <h4>500+</h4>
+                            <p>Prestasi Mahasiswa</p>
+                        </div>
+                    </div>
+                    <div class="floating-card float-2">
+                        <div class="icon-box"><i class="ri-team-fill"></i></div>
+                        <div>
+                            <h4>120+</h4>
+                            <p>Organisasi & UKM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access -->
+    <section class="quick-access">
+        <div class="container quick-access-grid">
+            <a href="#organisasi" class="qa-card fade-up" style="--delay: 0.1s">
+                <div class="qa-icon"><i class="ri-team-line"></i></div>
+                <div class="qa-content">
+                    <h3>Organisasi</h3>
+                    <p>Temukan komunitas yang sesuai dengan minatmu.</p>
+                </div>
+            </a>
+            <a href="#organisasi" class="qa-card fade-up" style="--delay: 0.2s">
+                <div class="qa-icon"><i class="ri-basketball-line"></i></div>
+                <div class="qa-content">
+                    <h3>UKM</h3>
+                    <p>Kembangkan minat dan bakat di berbagai kegiatan.</p>
+                </div>
+            </a>
+            <a href="#prestasi" class="qa-card fade-up" style="--delay: 0.3s">
+                <div class="qa-icon"><i class="ri-trophy-line"></i></div>
+                <div class="qa-content">
+                    <h3>Prestasi</h3>
+                    <p>Lihat pencapaian mahasiswa dan kampus.</p>
+                </div>
+            </a>
+            <a href="#layanan" class="qa-card fade-up" style="--delay: 0.4s">
+                <div class="qa-icon"><i class="ri-customer-service-2-line"></i></div>
+                <div class="qa-content">
+                    <h3>Layanan</h3>
+                    <p>Akses berbagai kebutuhan layanan mahasiswa.</p>
+                </div>
+            </a>
+            <a href="#agenda" class="qa-card fade-up" style="--delay: 0.5s">
+                <div class="qa-icon"><i class="ri-calendar-event-line"></i></div>
+                <div class="qa-content">
+                    <h3>Agenda</h3>
+                    <p>Temukan kegiatan yang akan datang.</p>
+                </div>
+            </a>
+            <a href="#aik" class="qa-card fade-up" style="--delay: 0.6s">
+                <div class="qa-icon"><i class="ri-book-3-line"></i></div>
+                <div class="qa-content">
+                    <h3>AIK</h3>
+                    <p>Kenali kegiatan kajian, syiar, dan Kemuhammadiyahan.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Kehidupan Mahasiswa -->
+    <section id="kegiatan" class="section">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2>Kuliah Bukan Hanya Tentang <span class="highlight">Ruang Kelas.</span></h2>
+                <p>Kembangkan kemampuan, pengalaman, kepemimpinan, dan karakter melalui berbagai aktivitas
+                    kemahasiswaan.</p>
+            </div>
+            <div class="kegiatan-grid">
+                <div class="kegiatan-card fade-up">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=600&auto=format&fit=crop"
+                        alt="Organisasi">
+                    <div class="kegiatan-content">
+                        <h3>Organisasi</h3>
+                        <p>Belajar memimpin, bekerja dalam tim, dan mengelola kegiatan.</p>
+                    </div>
+                </div>
+                <div class="kegiatan-card fade-up" style="--delay: 0.1s">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=600&auto=format&fit=crop"
+                        alt="Minat & Bakat">
+                    <div class="kegiatan-content">
+                        <h3>Minat & Bakat</h3>
+                        <p>Salurkan kemampuan dalam bidang olahraga, seni, teknologi, akademik, dll.</p>
+                    </div>
+                </div>
+                <div class="kegiatan-card fade-up" style="--delay: 0.2s">
+                    <img src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Pengabdian">
+                    <div class="kegiatan-content">
+                        <h3>Pengabdian</h3>
+                        <p>Berpartisipasi dalam kegiatan sosial dan memberikan manfaat bagi masyarakat.</p>
+                    </div>
+                </div>
+                <div class="kegiatan-card fade-up" style="--delay: 0.3s">
+                    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=600&auto=format&fit=crop"
+                        alt="Kepemimpinan">
+                    <div class="kegiatan-content">
+                        <h3>Kepemimpinan</h3>
+                        <p>Membangun pengalaman dan kemampuan berorganisasi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organisasi & UKM -->
+    <section id="organisasi" class="section bg-light">
+        <div class="container">
+            <div class="section-header flex-header fade-up">
+                <div>
+                    <h2>Cari Ruang untuk <span class="highlight">Berkembang.</span></h2>
+                    <p>Temukan organisasi mahasiswa dan komunitas yang sesuai dengan minatmu.</p>
+                </div>
+                <a href="#" class="btn btn-outline">Jelajahi Semua <i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="org-filter fade-up">
+                <button class="filter-btn active">Semua</button>
+                <button class="filter-btn">BEM & DPM</button>
+                <button class="filter-btn">Himpunan</button>
+                <button class="filter-btn">UKM</button>
+                <button class="filter-btn">Ortom</button>
+            </div>
+
+            <div class="org-grid">
+                <!-- Org Card 1 -->
+                <div class="org-card fade-up">
+                    <div class="org-header">
+                        <div class="org-logo bg-green"><i class="ri-macbook-line"></i></div>
+                        <span class="badge badge-ukm">UKM</span>
+                    </div>
+                    <h3 class="org-name">UKM Teknologi</h3>
+                    <p class="org-desc">Wadah mahasiswa yang tertarik pada teknologi, pemrograman, dan inovasi digital.
+                    </p>
+                    <a href="#" class="org-link">Lihat Detail <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <!-- Org Card 2 -->
+                <div class="org-card fade-up" style="--delay: 0.1s">
+                    <div class="org-header">
+                        <div class="org-logo bg-amber"><i class="ri-mic-line"></i></div>
+                        <span class="badge badge-ukm">UKM</span>
+                    </div>
+                    <h3 class="org-name">Paduan Suara</h3>
+                    <p class="org-desc">Kembangkan bakat bernyanyi dan wujudkan harmoni suara melalui latihan vokal
+                        bersama.</p>
+                    <a href="#" class="org-link">Lihat Detail <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <!-- Org Card 3 -->
+                <div class="org-card fade-up" style="--delay: 0.2s">
+                    <div class="org-header">
+                        <div class="org-logo bg-blue"><i class="ri-government-line"></i></div>
+                        <span class="badge badge-bem">BEM</span>
+                    </div>
+                    <h3 class="org-name">BEM Universitas</h3>
+                    <p class="org-desc">Badan Eksekutif Mahasiswa tingkat universitas sebagai lembaga eksekutif
+                        tertinggi.</p>
+                    <a href="#" class="org-link">Lihat Detail <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <!-- Org Card 4 -->
+                <div class="org-card fade-up" style="--delay: 0.3s">
+                    <div class="org-header">
+                        <div class="org-logo bg-red"><i class="ri-heart-pulse-line"></i></div>
+                        <span class="badge badge-ortom">Ortom</span>
+                    </div>
+                    <h3 class="org-name">Tapak Suci</h3>
+                    <p class="org-desc">Organisasi otonom Muhammadiyah yang bergerak dalam seni bela diri pencak silat.
+                    </p>
+                    <a href="#" class="org-link">Lihat Detail <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prestasi -->
+    <section id="prestasi" class="section">
+        <div class="container">
+            <div class="prestasi-stats fade-up">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Mahasiswa Berprestasi</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100+</h3>
+                    <p>Prestasi</p>
+                </div>
+                <div class="stat-item">
+                    <h3>30+</h3>
+                    <p>Kompetisi</p>
+                </div>
+            </div>
+
+            <div class="section-header text-center fade-up mt-4">
+                <h2>Prestasi Hari Ini, <span class="highlight">Inspirasi untuk Esok.</span></h2>
+                <p>Cerita kebanggaan dari mahasiswa yang terus berinovasi dan berkarya.</p>
+            </div>
+
+            <div class="prestasi-grid">
+                <!-- Prestasi Card -->
+                <div class="prestasi-card fade-up">
+                    <img src="https://images.unsplash.com/photo-1561489422-45de3d015e3e?q=80&w=600&auto=format&fit=crop"
+                        alt="Juara 1 Kompetisi Nasional" class="prestasi-img">
+                    <div class="prestasi-content">
+                        <div class="prestasi-meta">Tahun 2026</div>
+                        <h3>Juara 1 — Kompetisi Teknologi Nasional</h3>
+                        <p class="prestasi-author">Ahmad Ridwan • Sistem Informasi</p>
+                    </div>
+                </div>
+                <!-- Prestasi Card -->
+                <div class="prestasi-card fade-up" style="--delay: 0.1s">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop"
+                        alt="Juara Debat Internasional" class="prestasi-img">
+                    <div class="prestasi-content">
+                        <div class="prestasi-meta">Tahun 2026</div>
+                        <h3>Medali Emas — Debat Internasional</h3>
+                        <p class="prestasi-author">Siti Nurhaliza • Ilmu Komunikasi</p>
+                    </div>
+                </div>
+                <!-- Prestasi Card -->
+                <div class="prestasi-card fade-up" style="--delay: 0.2s">
+                    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=600&auto=format&fit=crop"
+                        alt="Juara Pencak Silat" class="prestasi-img">
+                    <div class="prestasi-content">
+                        <div class="prestasi-meta">Tahun 2026</div>
+                        <h3>Juara Umum — Kejuaraan Tapak Suci</h3>
+                        <p class="prestasi-author">Tim Tapak Suci Universitas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-3 fade-up">
+                <a href="#" class="btn btn-outline">Lihat Semua Prestasi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AIK Section -->
+    <section id="aik" class="section aik-section">
+        <div class="aik-bg"></div>
+        <div class="container">
+            <div class="section-header text-white fade-up">
+                <h2 class="text-white">Tumbuh dalam Ilmu, <span class="highlight-amber">Nilai, dan Pengabdian.</span>
+                </h2>
+                <p>Al-Islam dan Kemuhammadiyahan menjadi bagian dari proses pengembangan mahasiswa melalui kegiatan
+                    keislaman, kajian, syiar, kaderisasi, dan penguatan nilai kemuhammadiyahan.</p>
+            </div>
+
+            <div class="aik-grid">
+                <div class="aik-card fade-up">
+                    <div class="aik-icon"><i class="ri-book-open-fill"></i></div>
+                    <h3>Kajian</h3>
+                    <p>Informasi kajian dan diskusi keislaman.</p>
+                </div>
+                <div class="aik-card fade-up" style="--delay: 0.1s">
+                    <div class="aik-icon"><i class="ri-broadcast-fill"></i></div>
+                    <h3>Syiar</h3>
+                    <p>Kegiatan yang menghidupkan nilai-nilai Islam dalam kehidupan kampus.</p>
+                </div>
+                <div class="aik-card fade-up" style="--delay: 0.2s">
+                    <div class="aik-icon"><i class="ri-sun-fill"></i></div>
+                    <h3>Kemuhammadiyahan</h3>
+                    <p>Mengenal pemikiran, sejarah, gerakan, dan nilai Kemuhammadiyahan.</p>
+                </div>
+                <div class="aik-card fade-up" style="--delay: 0.3s">
+                    <div class="aik-icon"><i class="ri-group-fill"></i></div>
+                    <h3>Kaderisasi</h3>
+                    <p>Kegiatan pembinaan dan pengembangan karakter mahasiswa.</p>
+                </div>
+                <div class="aik-card fade-up" style="--delay: 0.4s">
+                    <div class="aik-icon"><i class="ri-hand-heart-fill"></i></div>
+                    <h3>Pengabdian</h3>
+                    <p>Kegiatan sosial dan kemanusiaan yang memberikan manfaat bagi masyarakat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Mahasiswa -->
+    <section id="layanan" class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2>Butuh Bantuan? <span class="highlight">Temukan Layanannya.</span></h2>
+                <p>Akses berbagai layanan administratif dan dukungan kemahasiswaan dengan mudah.</p>
+            </div>
+
+            <div class="layanan-grid">
+                <a href="#" class="layanan-card fade-up">
+                    <div class="layanan-icon"><i class="ri-money-dollar-circle-line"></i></div>
+                    <div>
+                        <h3>Beasiswa</h3>
+                        <p>Informasi beasiswa dan persyaratan.</p>
+                    </div>
+                </a>
+                <a href="#" class="layanan-card fade-up" style="--delay: 0.1s">
+                    <div class="layanan-icon"><i class="ri-file-list-3-line"></i></div>
+                    <div>
+                        <h3>Administrasi</h3>
+                        <p>Pengajuan proposal & surat.</p>
+                    </div>
+                </a>
+                <a href="#" class="layanan-card fade-up" style="--delay: 0.2s">
+                    <div class="layanan-icon"><i class="ri-mental-health-line"></i></div>
+                    <div>
+                        <h3>Konseling</h3>
+                        <p>Layanan dukungan psikologis.</p>
+                    </div>
+                </a>
+                <a href="#" class="layanan-card fade-up" style="--delay: 0.3s">
+                    <div class="layanan-icon"><i class="ri-medal-line"></i></div>
+                    <div>
+                        <h3>Prestasi</h3>
+                        <p>Pendataan prestasi mahasiswa.</p>
+                    </div>
+                </a>
+                <a href="#" class="layanan-card fade-up" style="--delay: 0.4s">
+                    <div class="layanan-icon"><i class="ri-customer-service-2-line"></i></div>
+                    <div>
+                        <h3>Pengaduan</h3>
+                        <p>Pusat bantuan & pengaduan.</p>
+                    </div>
+                </a>
+                <a href="#" class="layanan-card fade-up" style="--delay: 0.5s">
+                    <div class="layanan-icon"><i class="ri-book-3-line"></i></div>
+                    <div>
+                        <h3>Layanan AIK</h3>
+                        <p>Sertifikasi dan kegiatan AIK.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="text-center mt-4 fade-up">
+                <a href="#" class="btn btn-outline">Lihat Semua Layanan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agenda Section -->
+    <section id="agenda" class="section">
+        <div class="container">
+            <div class="section-header flex-header fade-up">
+                <div>
+                    <h2>Apa yang Sedang <span class="highlight">Terjadi di Kampus?</span></h2>
+                    <p>Jangan lewatkan berbagai kegiatan menarik yang akan datang.</p>
+                </div>
+                <a href="#" class="btn btn-outline">Lihat Semua Agenda</a>
+            </div>
+
+            <div class="agenda-list">
+                <!-- Agenda Item -->
+                <div class="agenda-item fade-up">
+                    <div class="agenda-date">
+                        <span class="date">05</span>
+                        <span class="month">OKT</span>
+                    </div>
+                    <div class="agenda-content">
+                        <span class="badge badge-aik">AIK</span>
+                        <h3 class="agenda-title">Kajian Mahasiswa: Pemuda dan Masa Depan</h3>
+                        <div class="agenda-meta">
+                            <span><i class="ri-map-pin-line"></i> Auditorium Kampus</span>
+                            <span><i class="ri-time-line"></i> 15.30 WIB</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agenda Item -->
+                <div class="agenda-item fade-up" style="--delay: 0.1s">
+                    <div class="agenda-date">
+                        <span class="date">12</span>
+                        <span class="month">OKT</span>
+                    </div>
+                    <div class="agenda-content">
+                        <span class="badge badge-ukm">Kemahasiswaan</span>
+                        <h3 class="agenda-title">Expo Organisasi & UKM 2026</h3>
+                        <div class="agenda-meta">
+                            <span><i class="ri-map-pin-line"></i> Lapangan Utama</span>
+                            <span><i class="ri-time-line"></i> 08.00 - 15.00 WIB</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agenda Item -->
+                <div class="agenda-item fade-up" style="--delay: 0.2s">
+                    <div class="agenda-date">
+                        <span class="date">20</span>
+                        <span class="month">OKT</span>
+                    </div>
+                    <div class="agenda-content">
+                        <span class="badge badge-bem">Prestasi</span>
+                        <h3 class="agenda-title">Penganugerahan Mahasiswa Berprestasi</h3>
+                        <div class="agenda-meta">
+                            <span><i class="ri-map-pin-line"></i> Gedung Rektorat Lt. 3</span>
+                            <span><i class="ri-time-line"></i> 09.00 WIB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Berita / Highlight -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2>Cerita dari <span class="highlight">Kampus Kita.</span></h2>
+                <p>Highlight kegiatan, inspirasi, dan berita terbaru dari dunia kemahasiswaan.</p>
+            </div>
+
+            <div class="berita-grid">
+                <article class="berita-card fade-up">
+                    <div class="berita-img-wrapper">
+                        <img src="https://images.pexels.com/photos/6646917/pexels-photo-6646917.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Kegiatan Pengabdian">
+                        <span class="badge badge-ortom berita-badge">Pengabdian</span>
+                    </div>
+                    <div class="berita-content">
+                        <div class="berita-date">28 September 2026</div>
+                        <h3 class="berita-title">Mahasiswa Terjun Langsung Bantu Warga Terdampak Banjir</h3>
+                        <p class="berita-excerpt">Ratusan mahasiswa yang tergabung dalam satgas relawan kampus membantu
+                            proses evakuasi...</p>
+                        <a href="#" class="berita-link">Baca Selengkapnya <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </article>
+                <article class="berita-card fade-up" style="--delay: 0.1s">
+                    <div class="berita-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?q=80&w=600&auto=format&fit=crop"
+                            alt="Kegiatan AIK">
+                        <span class="badge badge-aik berita-badge">AIK</span>
+                    </div>
+                    <div class="berita-content">
+                        <div class="berita-date">25 September 2026</div>
+                        <h3 class="berita-title">Semarak Kajian Akbar Sambut Mahasiswa Baru</h3>
+                        <p class="berita-excerpt">Membentuk karakter Islami sejak dini, biro AIK menyelenggarakan kajian
+                            akbar yang dihadiri...</p>
+                        <a href="#" class="berita-link">Baca Selengkapnya <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </article>
+                <article class="berita-card fade-up" style="--delay: 0.2s">
+                    <div class="berita-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=600&auto=format&fit=crop"
+                            alt="Kegiatan Teknologi">
+                        <span class="badge badge-ukm berita-badge">Kemahasiswaan</span>
+                    </div>
+                    <div class="berita-content">
+                        <div class="berita-date">20 September 2026</div>
+                        <h3 class="berita-title">Inovasi Mahasiswa Tembus Pendanaan Nasional</h3>
+                        <p class="berita-excerpt">Tim mahasiswa dari Fakultas Teknik berhasil mendapatkan pendanaan
+                            untuk inovasi sistem cerdas...</p>
+                        <a href="#" class="berita-link">Baca Selengkapnya <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="cta-bg-elements">
+            <div class="cta-blob"></div>
+        </div>
+        <div class="container text-center cta-container fade-up">
+            <h2 class="text-white">Jangan Hanya Menjadi Penonton.</h2>
+            <p class="text-white cta-subtitle">Temukan kegiatan yang sesuai dengan minatmu dan mulai perjalananmu
+                bersama komunitas mahasiswa.</p>
+            <div class="cta-actions">
+                <a href="#organisasi" class="btn btn-amber btn-lg">Mulai Eksplorasi <i class="ri-rocket-line"></i></a>
+                <a href="#agenda" class="btn btn-outline-white btn-lg">Lihat Agenda</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo text-white">
+                        <i class="ri-book-open-fill"></i>
+                        <span>Kemahasiswaan & AIK</span>
+                    </a>
+                    <p class="mt-2 text-gray">Pusat informasi kegiatan, organisasi, prestasi, layanan, dan aktivitas AIK
+                        untuk mendukung perjalanan mahasiswa.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                        <a href="#"><i class="ri-youtube-line"></i></a>
+                        <a href="#"><i class="ri-tiktok-line"></i></a>
+                        <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigasi</h3>
+                    <ul>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#kegiatan">Kemahasiswaan</a></li>
+                        <li><a href="#organisasi">Organisasi & UKM</a></li>
+                        <li><a href="#prestasi">Prestasi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="#aik">AIK</a></li>
+                        <li><a href="#layanan">Layanan Mahasiswa</a></li>
+                        <li><a href="#agenda">Agenda</a></li>
+                        <li><a href="#">Berita</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Kontak</h3>
+                    <ul>
+                        <li><i class="ri-map-pin-line"></i> Gedung Rektorat Lt. 1, Kampus Utama</li>
+                        <li><i class="ri-mail-line"></i> kemahasiswaan@universitas.ac.id</li>
+                        <li><i class="ri-phone-line"></i> +62 123 4567 890</li>
+                        <li><i class="ri-time-line"></i> Senin - Jumat, 08.00 - 16.00 WIB</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Biro Kemahasiswaan & AIK. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
